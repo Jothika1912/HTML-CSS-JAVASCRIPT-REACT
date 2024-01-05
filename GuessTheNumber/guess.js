@@ -1,4 +1,4 @@
-var total = 10
+var total = 10;
 function guessTheNumber() {
     var num = Number(document.getElementById("number").value)
     var answer = document.getElementById("answer")
