@@ -1,4 +1,4 @@
-var total = 0
+var total = 10
 function guessTheNumber() {
     var num = Number(document.getElementById("number").value)
     var answer = document.getElementById("answer")
@@ -20,9 +20,9 @@ function guessTheNumber() {
         answer.textContent = "wrong";
         total = total - 1
         score.textContent = "Score :" + total
-        if (total < -9) {
+        if (total <= 0) {
             alert("Game over")
-            total = 0;
+            total = 10;
         }
     }
 }
