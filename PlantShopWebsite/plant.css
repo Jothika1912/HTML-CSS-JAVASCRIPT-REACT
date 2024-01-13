@@ -489,7 +489,7 @@ section {
     font-weight: bold;
 }
 
-@media screen and (max-width: 601px) {
+@media screen and (min-width: 480px) {
 
     .maindiv,
     .div4,
