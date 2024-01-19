@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated login page</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div class="background">
+    <video autoplay muted loop class="video">
+        <source src="./imagevideo/dots_-_75169 (1080p).mp4" type="video/mp4" class="v">
+    </video>
+    <div class="login">
+           <div class="login-form">
+            <h1>LOGIN</h1>
+            <form action="./successful.html">
+                <input type="text" placeholder="Username" required><br><br>
+                <input type="password" placeholder="Password" title="Minimum 6 characters atleast 1 Alphabet and 1 Number"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br><br><br>
+                <button>Login</button>
+            </form>
+           </div>
+    </div>
+</div>
+</body>
+</html>
