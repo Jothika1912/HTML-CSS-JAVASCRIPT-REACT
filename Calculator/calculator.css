@@ -1,0 +1,19 @@
+.calculator{
+    display: block;
+    border: 1px solid black;
+    height: 428px;
+    width: 400px;
+    margin: auto;
+    background-color: #797a82;
+    padding: 10px;
+}
+input[type=button]{
+    height: 73px;
+    width: 93px;
+    margin: 7px 2px;
+}
+.display-box{
+    height: 59px;
+    width: 289px;
+}
+
