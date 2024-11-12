@@ -1,163 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      
-      <!-- Header -->
-      <nav class="navbar">
-        <div class="max-width">
-          <div class="logo"><a href="#"><span>PORTFOLIO</span></a></div>
-          <ul class="menu">
-            <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
-            <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
-            <li><a href="#skills" class="menu-btn"><strong>Skills</strong></a></li>
-            <li><a href="#projects" class="menu-btn"><strong>Projects</strong></a></li>
-            <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
-          </ul>
-        </div>
-      </nav>
-       <!-- Home -->
-  <section class="home" id="home">
-    <div class="max-width">
-      <div class="home-content">
-        <div class="text-1">Hello, This is</div>
-        <div class="text-2">Jothika M</div>
-        <div class="text-3">And I'm a</div>
-        <a href="#">Frontend Developer</a>
-      </div>
-    </div>
-  </section>
-   <!--  About  -->
-   <section class="about" id="about">
-    <div class="max-width">
-      <h2 class="title">About Me</h2>
-      <div class="about-content">
-        <div class="column right">
-          <div class="text">I'm Jothika and I'm a </div>
-          <p>An enthusiastic and detail-oriented developer with proficient knowledge in
-            HTML5, CSS3, JavaScript as well as third-party libraries like  ReactJS.<br><br>
-            Seeking to utilize my technical skills and expertise to provide value to the
-            employer and contribute to successful projects both today and in the
-            future. <br></p>
-
-          <a href="https://drive.google.com/file/d/1QFXZCgrgWjDwngRAvitc2ema7dPdBaJI/view?usp=sharing" target="blank">Download Resume</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="skills" id="skills">
-    <div class="max-width">
-        <h2 class="title">My Skills</h2>
-        <div class="skills-content">
-          <div class="column left">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+   <link rel="stylesheet" href="style.css" />
   
-            <p><br>
-              <li class="project">HTML5</li>
-              <li class="project">CSS3</li>
-              <li class="project">JavaScript</li>
-              <li class="project">ReactJS</li>
-              <li class="project">Bootstrap</li><br><br>
-              <li class="project"></li>
-            </p>
-            <h2 class="title">Tools</h2>
-            <p>
-                <br>
-                    <li class="project">Github</li>
-                    <li class="project">Git</li>
-                    <li class="project">Visual Studio</li>
-            </p>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- FontAwesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-            </div>
-            </div>
-  </section>
-  <!-- Projects -->
-  <section class="projects" id="projects">
-    <div class="max-width">
-      <h2 class="title">My Projects</h2>
-      <div class="carousel owl-carousel">
-        <div class="card">
-          <div class="box">
-            <img src="./image/Animated.png" alt="">
-            <div class="text">Animated Login Page</div>
-            <p>#Project Details:- Responsive Animated login form.</p>
-            <a href="https://jothika1912.github.io/HTML-CSS-JAVASCRIPT-REACT/AnimatedLogin/">View the project</a>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand text-light fw-bold fs-4" href="#">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-light px-3 py-2" href="#home"><strong>Home</strong></a></li>
+          <li class="nav-item"><a class="nav-link text-light px-3 py-2" href="#about"><strong>About</strong></a></li>
+          <li class="nav-item"><a class="nav-link text-light px-3 py-2" href="#skills"><strong>Skills</strong></a></li>
+          <li class="nav-item"><a class="nav-link text-light px-3 py-2" href="#projects"><strong>Projects</strong></a></li>
+          <li class="nav-item"><a class="nav-link text-light px-3 py-2" href="#contact"><strong>Contact</strong></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home d-flex align-items-center justify-content-center" style="background-image: url('./image/background.jpg');">
+    <div class="overlay"></div>
+    <div class="container text-center home-content">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-3 fw-bold mb-3 text-shadow" style="font-size: 3rem;">Hello, This is</h1>
+          <h2 class="display-2 mb-3 text-light" style="font-size: 4rem;">Jothika M</h2>
+          <h3 class="mb-4" style="font-size: 1.5rem;">
+            And I'm a <br />
+            <span class="text-light">Full-Stack Developer</span>
+          </h3>
+          <a href="https://github.com/Jothika1912/HTML-CSS-JAVASCRIPT-REACT" class="btn btn-outline-light rounded-pill px-5 py-3 mb-4 shadow-lg" style="border: 2px solid white; text-decoration: none; transition: all 0.3s ease;">
+            View Projects
+          </a>
+          <div class="mt-4">
+            <a href="https://github.com/Jothika2001" class="mx-2 text-light" style="font-size: 1.5rem; transition: all 0.3s ease; text-decoration: none;">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jothika-m-187a8a235" class="mx-2 text-light" style="font-size: 1.5rem; transition: all 0.3s ease; text-decoration: none;">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
-        <div class="card">
-          <div class="box">
-            <img src="./image/guess.png" alt="">
-            <div class="text">Guess The Number</div>
-            <p>#Project Details:- Guess the number game.</p>
-            <a href="https://jothika1912.github.io/HTML-CSS-JAVASCRIPT-REACT/GuessTheNumber/">View the project</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <img src="./image/Login.png" alt="">
-            <div class="text">Login</div>
-            <p>#Project Details:- LSimple login form</p>
-            <a href="https://jothika1912.github.io/HTML-CSS-JAVASCRIPT-REACT/LoginPage/ ">View the project</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <img src="./image/Plant shop.png" alt="">
-            <div class="text">E-commerce</div>
-            <p>#Project Details:- Responsive E-commerce website by using Html, Css, Javascript.</p>
-            <a href="https://jothika1912.github.io/HTML-CSS-JAVASCRIPT-REACT/PlantShopWebsite/">View the project</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <img src="./image/todo.png" alt="">
-            <div class="text">To Do List</div>
-            <p>#Project Details:- Ownly created to do list.</p>
-            <a href="https://jothika1912.github.io/HTML-CSS-JAVASCRIPT-REACT/ToDoList/">View the project</a>
-          </div>
-        </div>
+      </div>
     </div>
   </section>
-  <section class="contact" id="contact">
-    <div class="max-width">
-      <h2 class="title">Contact Me</h2><br>
-      <div class="contact-content">
-        <div class="column left">
-          <div class="text">Get in Touch</div><br>
-          <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be a part of your visions. Email me with any questions or inquiries. I'll happy to answer your questions and set up a meeting with you.</p><br>
-          <div class="icons">
 
-            <a href="#">
-              <div class="row">
-                
-                <div class="info">
-                  <div class="head">Name</div>
-                  <div class="sub-title"><a href="#" style="text-decoration: none; color: #333;"> Jothika</a></div><br>
-                </div>
-              </div>
-            </a>
+  <!-- About Section -->
+  <section id="about" class="about py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
+          <h2 class="title mb-4 text-dark display-4">ABOUT ME</h2>
+          <h3 class="text-dark mb-3">Hi, I'm Jothika</h3>
+          <p class="text-muted mb-4">I'm a passionate Full Stack Developer with expertise in both frontend and backend technologies. I specialize in creating dynamic, scalable, and high-performance applications using the latest technologies.</p>
+          <p class="text-muted mb-4">With a deep understanding of <strong>JavaScript</strong>, <strong>ReactJS</strong>, <strong>Node.js</strong>, and <strong>MySQL</strong>, I aim to bridge the gap between design and functionality.</p>
+          <p class="text-muted mb-4">I’m looking for opportunities where I can apply my skills to solve real-world problems, and I’m always eager to learn and grow.</p>
+          <a href="https://drive.google.com/file/d/1QFXZCgrgWjDwngRAvitc2ema7dPdBaJI/view?usp=sharing" target="_blank" class="btn btn-primary btn-lg mt-4 px-5 py-3 shadow-lg">Download Resume</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="/about.jpg" alt="Jothika" class="img-fluid rounded-circle shadow-lg" style="max-width: 80%;" />
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Skills Section -->
+  <section id="skills" class="skills py-5">
+    <div class="container">
+      <h1 class="title text-center text-white mb-4">SKILLS</h1>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-5 mb-4">
+          <div class="card shadow-lg border-0">
+            <div class="card-body">
+              <h4 class="text-center mb-3 font-weight-bold">Languages & Frameworks</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center p-3">
+                  <i class="fab fa-html5" style="font-size: 30px; color: #E44D26;" class="mr-3"></i>
+                  <span class="font-weight-bold">HTML5</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center p-3">
+                  <i class="fab fa-css3-alt" style="font-size: 30px; color: #1572B6;" class="mr-3"></i>
+                  <span class="font-weight-bold">CSS3</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center p-3">
+                  <i class="fab fa-js-square" style="font-size: 30px; color: #F7DF1E;" class="mr-3"></i>
+                  <span class="font-weight-bold">JavaScript</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center p-3">
+                  <i class="fab fa-react" style="font-size: 30px; color: #61DAFB;" class="mr-3"></i>
+                  <span class="font-weight-bold">ReactJS</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center p-3">
+                  <i class="fab fa-bootstrap" style="font-size: 30px; color: #563D7C;" class="mr-3"></i>
+                  <span class="font-weight-bold">Bootstrap</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center p-3">
+                  <i class="fab fa-node-js" style="font-size: 30px; color: #339933;" class="mr-3"></i>
+                  <span class="font-weight-bold">Node.js</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-            <div class="row">
-              
-              <div class="info">
-                <div class="head">Email</div>
-                <div class="sub-title"><a href="mailto:#" style="text-decoration: none; color: #333;">mjothi680@gmail.com</a></div><br>
+        <div class="col-md-5 mb-4">
+          <div class="card shadow-lg border-0">
+            <div class="card-body">
+              <h4 class="text-center mb-3 font-weight-bold">Databases & Tools</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center p-3">
+                  <i class="fas fa-database" style="font-size: 30px; color: #00758F;" class="mr-3"></i>
+                  <span class="font-weight-bold">MySQL</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center p-3">
+                  <i class="fab fa-github" style="font-size: 30px; color: #333;" class="mr-3"></i>
+                  <span class="font-weight-bold">GitHub</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center p-3">
+                  <i class="fab fa-git" style="font-size: 30px; color: #F05032;" class="mr-3"></i>
+                  <span class="font-weight-bold">Git</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center p-3">
+                  <i class="fas fa-code" style="font-size: 30px; color: #007ACC;" class="mr-3"></i>
+                  <span class="font-weight-bold">Visual Studio Code</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+ <!-- Projects Section -->
+<section id="projects" class="projects py-5 bg-light">
+    <div class="container">
+      <h2 class="title text-center mb-5">MY PROJECTS</h2>
+      <div class="row">
+        <!-- Project 1: Animated Login Page -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="/Animated.png" alt="Animated Login Page" class="card-img-top" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-primary">Animated Login Page</h5>
+              <p class="card-text text-muted mb-3">Responsive Animated login form.</p>
+              <a href="https://jothika1912.github.io/HTML-CSS-JAVASCRIPT-REACT/AnimatedLogin/" class="btn btn-primary mt-auto" target="_blank">View the project</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 2: Guess The Number -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="/guess.png" alt="Guess The Number" class="card-img-top" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-primary">Guess The Number</h5>
+              <p class="card-text text-muted mb-3">Guess the number game.</p>
+              <a href="https://jothika1912.github.io/HTML-CSS-JAVASCRIPT-REACT/GuessTheNumber/" class="btn btn-primary mt-auto" target="_blank">View the project</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 3: Login Page -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="/Login.png" alt="Login Page" class="card-img-top" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-primary">Login Page</h5>
+              <p class="card-text text-muted mb-3">Simple login form.</p>
+              <a href="https://jothika1912.github.io/HTML-CSS-JAVASCRIPT-REACT/LoginPage/" class="btn btn-primary mt-auto" target="_blank">View the project</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 4: E-commerce Website -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="/Plant shop.png" alt="E-commerce Website" class="card-img-top" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-primary">E-commerce Website</h5>
+              <p class="card-text text-muted mb-3">Responsive E-commerce website built using HTML, CSS, and JavaScript.</p>
+              <a href="https://jothika1912.github.io/HTML-CSS-JAVASCRIPT-REACT/PlantShopWebsite/" class="btn btn-primary mt-auto" target="_blank">View the project</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 5: To Do List -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./image/todo.png" alt="To Do List" class="card-img-top" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-primary">To Do List</h5>
+              <p class="card-text text-muted mb-3">Personalized To Do list application.</p>
+              <a href="https://jothika1912.github.io/HTML-CSS-JAVASCRIPT-REACT/ToDoList/" class="btn btn-primary mt-auto" target="_blank">View the project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="contact py-5 bg-info">
+    <div class="container">
+      <h2 class="title text-center text-white mb-5">CONTACT ME</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card shadow-lg rounded-lg border-0">
+            <div class="card-body p-5">
+              <h4 class="text-center mb-4 text-dark">Get in Touch</h4>
+              <p class="text-muted text-center mb-4">
+                Feel free to reach out if you have any questions or opportunities. I am always open to discussing new projects, ideas, and collaborations.
+              </p>
+              <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item border-0 text-dark"><strong class="text-dark">Name:</strong> Jothika M</li>
+                <li class="list-group-item border-0"><strong class="text-dark">Email:</strong> <a href="mailto:mjothi680@gmail.com" class="text-decoration-none">mjothi680@gmail.com</a></li>
+                <li class="list-group-item border-0"><strong class="text-dark">Phone:</strong> <a href="tel:+918098890723" class="text-decoration-none">8098890723</a></li>
+              </ul>
+              <div class="text-center mt-4">
+                <a href="mailto:mjothi680@gmail.com" class="btn btn-primary py-2 px-4 rounded-pill border-0 shadow-sm">
+                  Send an Email
+                </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
-            <div class="row">
-             
-              <div class="info">
-                <div class="head">Language Known</div>
-                <div class="sub-title">English, Tamil</div><br>
-              </div>
-            </div>
-
-            <br>
-  </body>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
